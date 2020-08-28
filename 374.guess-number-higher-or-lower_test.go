@@ -66,3 +66,8 @@ func guessNumber(n int) int {
 }
 
 // @lc code=end
+
+func guess(num int) int {
+	return 0
+}
+
