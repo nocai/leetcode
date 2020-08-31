@@ -1,0 +1,101 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.009  000.009: --- NVIM STARTING ---
+000.866  000.857: locale set
+001.359  000.493: inits 1
+001.380  000.021: window checked
+001.583  000.203: parsing arguments
+001.824  000.242: expanding arguments
+001.897  000.072: inits 2
+002.451  000.555: init highlight
+002.731  000.280: waiting for UI
+005.602  002.871: done waiting for UI
+005.620  000.018: initialized screen early for UI
+008.359  000.405  000.405: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/syncolor.vim
+008.631  000.961  000.555: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/synload.vim
+016.999  008.096  008.096: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/filetype.vim
+017.061  009.706  000.650: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/syntax.vim
+017.209  000.019  000.019: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/filetype.vim
+017.360  000.016  000.016: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/filetype.vim
+017.534  000.049  000.049: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/indent.vim
+017.719  000.019  000.019: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/filetype.vim
+017.885  000.039  000.039: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/ftplugin.vim
+020.397  002.297  002.297: sourcing /Users/liujun/.local/share/nvim/site/autoload/plug.vim
+026.777  002.484  002.484: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/ftoff.vim
+034.987  005.565  005.565: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/filetype.vim
+035.266  000.025  000.025: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/ftplugin.vim
+035.508  000.017  000.017: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/indent.vim
+036.124  000.144  000.144: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/syncolor.vim
+037.167  000.159  000.159: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/syncolor.vim
+037.801  000.135  000.135: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/syncolor.vim
+038.536  002.093  001.800: sourcing /Users/liujun/.vim/plugged/vim-gruvbox8/colors/gruvbox8.vim
+038.580  032.594  010.120: sourcing /Users/liujun/.config/nvim/init.vim
+038.587  000.373: sourcing vimrc file(s)
+039.059  000.106  000.106: sourcing /Users/liujun/.vim/plugged/accelerated-jk/plugin/accelerated-jk.vim
+039.658  000.410  000.410: sourcing /Users/liujun/.vim/plugged/vim-surround/plugin/surround.vim
+040.184  000.315  000.315: sourcing /Users/liujun/.vim/plugged/vim-floaterm/plugin/floaterm.vim
+040.736  000.368  000.368: sourcing /Users/liujun/.vim/plugged/auto-pairs/plugin/auto-pairs.vim
+040.956  000.036  000.036: sourcing /Users/liujun/.vim/plugged/rainbow/plugin/rainbow_main.vim
+041.300  000.163  000.163: sourcing /Users/liujun/.vim/plugged/lightline.vim/plugin/lightline.vim
+042.020  000.417  000.417: sourcing /Users/liujun/.vim/plugged/lightline-bufferline/autoload/lightline/bufferline.vim
+042.089  000.616  000.199: sourcing /Users/liujun/.vim/plugged/lightline-bufferline/plugin/bufferline.vim
+042.355  000.052  000.052: sourcing /Users/liujun/.vim/plugged/lazygit.nvim/plugin/lazygit.vim
+044.355  001.824  001.824: sourcing /Users/liujun/.vim/plugged/vim-devicons/plugin/webdevicons.vim
+045.148  000.580  000.580: sourcing /Users/liujun/.vim/plugged/fzf/plugin/fzf.vim
+046.328  000.975  000.975: sourcing /Users/liujun/.vim/plugged/fzf.vim/plugin/fzf.vim
+046.728  000.146  000.146: sourcing /Users/liujun/.vim/plugged/vim-easy-align/plugin/easy_align.vim
+047.658  000.462  000.462: sourcing /Users/liujun/.vim/plugged/vim-textobj-user/autoload/textobj/user.vim
+049.879  002.848  002.386: sourcing /Users/liujun/.vim/plugged/vim-textobj-indent/plugin/textobj/indent.vim
+050.229  000.158  000.158: sourcing /Users/liujun/.vim/plugged/vim-commentary/plugin/commentary.vim
+050.483  000.074  000.074: sourcing /Users/liujun/.vim/plugged/vim-quickrun/plugin/quickrun.vim
+051.039  000.119  000.119: sourcing /Users/liujun/.vim/plugged/vim-test/autoload/test.vim
+051.810  001.134  001.014: sourcing /Users/liujun/.vim/plugged/vim-test/plugin/test.vim
+052.112  000.040  000.040: sourcing /Users/liujun/.vim/plugged/vim-snippets/plugin/vimsnippets.vim
+052.763  000.110  000.110: sourcing /Users/liujun/.vim/plugged/coc.nvim/autoload/coc/rpc.vim
+053.914  000.946  000.946: sourcing /Users/liujun/.vim/plugged/coc.nvim/autoload/coc/util.vim
+054.756  000.239  000.239: sourcing /Users/liujun/.vim/plugged/coc.nvim/autoload/coc/client.vim
+059.830  007.481  006.187: sourcing /Users/liujun/.vim/plugged/coc.nvim/plugin/coc.vim
+061.266  000.319  000.319: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/gzip.vim
+061.366  000.019  000.019: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/health.vim
+061.584  000.152  000.152: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/man.vim
+063.343  000.292  000.292: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+063.410  001.758  001.466: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/matchit.vim
+063.643  000.158  000.158: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/matchparen.vim
+064.288  000.566  000.566: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/netrwPlugin.vim
+065.033  000.181  000.181: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/autoload/remote/host.vim
+065.494  000.177  000.177: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/autoload/remote/define.vim
+065.577  000.977  000.619: sourcing /Users/liujun/.local/share/nvim/rplugin.vim
+065.584  001.197  000.219: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/rplugin.vim
+065.836  000.165  000.165: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/shada.vim
+065.948  000.031  000.031: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/spellfile.vim
+066.203  000.174  000.174: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/tarPlugin.vim
+066.390  000.109  000.109: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/tohtml.vim
+066.499  000.028  000.028: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/tutor.vim
+066.776  000.191  000.191: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/plugin/zipPlugin.vim
+066.786  006.007: loading plugins
+066.921  000.135: loading packages
+067.063  000.142: loading after plugins
+067.076  000.013: inits 3
+071.437  004.361: reading ShaDa
+082.969  000.403  000.403: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/syntax/go.vim
+083.333  000.136  000.136: sourcing /Users/liujun/.vim/plugged/rainbow/autoload/rainbow_main.vim
+083.651  000.091  000.091: sourcing /Users/liujun/.vim/plugged/rainbow/autoload/rainbow.vim
+086.758  000.074  000.074: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/indent/go.vim
+087.399  000.035  000.035: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/ftplugin/go.vim
+088.655  016.479: opening buffers
+090.252  000.366  000.366: sourcing /Users/liujun/.vim/plugged/lightline.vim/autoload/lightline.vim
+090.888  000.047  000.047: sourcing /Users/liujun/.vim/plugged/lightline.vim/autoload/lightline/tab.vim
+091.388  000.195  000.195: sourcing /Users/liujun/.vim/plugged/lightline.vim/autoload/lightline/colorscheme.vim
+092.027  000.967  000.772: sourcing /Users/liujun/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/one.vim
+095.356  005.321: BufEnter autocommands
+095.360  000.004: editing files in windows
+095.590  000.230: VimEnter autocommands
+095.592  000.003: UIEnter autocommands
+096.049  000.200  000.200: sourcing /usr/local/Cellar/neovim/0.4.3/share/nvim/runtime/autoload/provider/clipboard.vim
+096.060  000.267: before starting main loop
+100.533  004.473: first screen update
+100.537  000.004: --- NVIM STARTED ---

@@ -42,7 +42,56 @@ import (
 
 // @lc code=start
 func searchRange(nums []int, target int) []int {
-	return []int{searchRangeLeft(nums, target), searchRangeRight(nums, target)}
+	first := findFirstPosition(nums, target)
+	if first == -1 {
+		return []int{-1, -1}
+	}
+
+	last := findLastPosition(nums, target)
+	return []int{first, last}
+	// return []int{searchRangeLeft(nums, target), searchRangeRight(nums, target)}
+}
+
+func findLastPosition(nums []int, target int) int {
+	if len(nums) == 0 {
+		return -1
+	}
+
+	left, right := 0, len(nums)-1
+	for left < right {
+		mid := left + (right-left+1)/2
+		if nums[mid] > target {
+			// [left, mid-1]
+			right = mid - 1
+		} else {
+			// [mid, right]
+			left = mid
+		}
+	}
+	if nums[left] == target {
+		return left
+	}
+	return -1
+}
+
+func findFirstPosition(nums []int, target int) int {
+	if len(nums) == 0 {
+		return -1
+	}
+
+	left, right := 0, len(nums)-1
+	for left < right {
+		mid := left + (right-left)/2
+		if nums[mid] < target {
+			left = mid + 1
+		} else {
+			right = mid
+		}
+	}
+	if nums[left] == target {
+		return left
+	}
+	return -1
 }
 
 func searchRangeRight(nums []int, target int) int {

@@ -52,7 +52,7 @@ import (
 )
 
 // @lc code=start
-func searchInsert(nums []int, target int) int {
+func searchInsert_2(nums []int, target int) int {
 	left, right := 0, len(nums)-1
 	// 搜索区间：[left, right]
 	for left <= right {
@@ -60,10 +60,39 @@ func searchInsert(nums []int, target int) int {
 		if target == nums[mid] {
 			return mid
 		} else if target < nums[mid] {
+			// [left, mid-1]
 			right = mid - 1
 		} else if target > nums[mid] {
+			// [mid+1, right]
 			left = mid + 1
 		}
+	}
+	return left
+}
+
+func searchInsert(nums []int, target int) int {
+	// 初始值的取舍范围
+	// 决定下面的搜索空间
+	left, right := 0, len(nums)
+
+	// 这里循环结束时，left == right
+	// [left, right]
+	for left < right {
+		mid := left + (right-left)/2
+		if target <= nums[mid] {
+			// [left, mid]
+			right = mid
+		} else {
+			// [mid+1, right]
+			left = mid + 1
+		}
+		// if nums[mid] < target {
+		// 	// [mid+1, right]
+		// 	left = mid + 1
+		// } else {
+		// 	// [left, mid]
+		// 	right = mid
+		// }
 	}
 	return left
 }
@@ -71,20 +100,21 @@ func searchInsert(nums []int, target int) int {
 // @lc code=end
 
 func TestSearchInsert(t *testing.T) {
-	t.Log(1 >> 1)
 	for index, tc := range []struct {
 		nums   []int
 		target int
 		rst    int
 	}{
+		{[]int{1}, 1, 0},
 		{[]int{2, 3, 5, 6}, 1, 0},
 		{[]int{1, 3, 5, 6}, 5, 2},
 		{[]int{1, 3, 5, 6}, 2, 1},
 		{[]int{1, 3, 5, 6}, 7, 4},
 		{[]int{1, 3, 5, 6}, 0, 0},
+		{[]int{1, 3}, 2, 1},
 	} {
 		t.Run(fmt.Sprintf("case: %v", index), func(t *testing.T) {
-			assert.Equal(t, tc.rst, searchInsert(tc.nums, tc.target))
+			assert.Equal(t, tc.rst, searchInsert_2(tc.nums, tc.target))
 		})
 	}
 }

@@ -45,6 +45,90 @@ import (
 )
 
 // @lc code=start
+func search_brute_force(nums []int, target int) int {
+	for index, num := range nums {
+		if num == target {
+			return index
+		}
+	}
+	return -1
+}
+
+func search_33_binary_search_2(nums []int, target int) int {
+	// func search(nums []int, target int) int {
+	if len(nums) == 0 {
+		return -1
+	}
+
+	left, right := 0, len(nums)-1
+	for left <= right {
+		mid := left + (right-left)/2
+		if nums[mid] == target {
+			return mid
+		}
+
+		if nums[mid] >= nums[left] {
+			// 左边[left,mid]有序
+			// 判断taget在此范围没有
+			if nums[left] <= target && target <= nums[mid] {
+				// 在
+				// 下一轮范围：[left,mid)
+				right = mid - 1
+			} else {
+				// (mid, right]
+				left = mid + 1
+			}
+		} else {
+			// 右边(mid, right]有序
+			if nums[mid] < target && target <= nums[right] {
+				// (mid, right]
+				left = mid + 1
+			} else {
+				// [left, mid)
+				right = mid - 1
+			}
+		}
+	}
+	return -1
+}
+
+func search_33_binary_search(nums []int, target int) int {
+	// func search(nums []int, target int) int {
+	if len(nums) == 0 {
+		return -1
+	}
+
+	left, right := 0, len(nums)-1
+	for left < right {
+		mid := left + (right-left)/2
+		if nums[mid] >= nums[left] {
+			// 左边[left,mid]有序
+			// 判断taget在此范围没有
+			if nums[left] <= target && target <= nums[mid] {
+				// 在
+				// 下一轮范围：[left,mid]
+				right = mid
+			} else {
+				// (mid, right]
+				left = mid + 1
+			}
+		} else {
+			// 右边有序
+			// (mid, right]
+			if nums[mid] < target && target <= nums[right] {
+				// (mid, right]
+				left = mid + 1
+			} else {
+				// [left, mid]
+				right = mid
+			}
+		}
+	}
+	if nums[left] == target {
+		return left
+	}
+	return -1
+}
 func search2(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
@@ -90,11 +174,16 @@ func TestSearch2(t *testing.T) {
 		target int
 		index  int
 	}{
+		{[]int{3, 1}, 1, 1},
+		{[]int{1}, 1, 0},
 		{[]int{4, 5, 6, 7, 0, 1, 2}, 0, 4},
 		{[]int{4, 5, 6, 7, 0, 1, 2}, 3, -1},
 	} {
 		t.Run(fmt.Sprintf("case: %v", index), func(t *testing.T) {
-			assert.Equal(t, tc.index, search2(tc.nums, tc.target))
+			assert.Equal(t, tc.index, search_33_binary_search(tc.nums, tc.target))
+		})
+		t.Run(fmt.Sprintf("case_2: %v", index), func(t *testing.T) {
+			assert.Equal(t, tc.index, search_33_binary_search_2(tc.nums, tc.target))
 		})
 	}
 }
