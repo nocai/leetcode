@@ -35,7 +35,7 @@
  * 所有输入只包含小写字母 a-z 。
  *
  */
-package arr
+package leetcode
 
 // @lc code=start
 func longestCommonPrefix(strs []string) string {

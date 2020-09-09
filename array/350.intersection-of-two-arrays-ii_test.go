@@ -46,7 +46,7 @@
  *
  *
  */
-package arr
+package leetcode
 
 import "sort"
 

@@ -1,6 +1,7 @@
 package leetcode
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -85,6 +86,8 @@ func isPalindrome(x int) bool {
 	for ; x > reverted; x /= 10 {
 		reverted = reverted*10 + x%10
 	}
+	fmt.Println("tsa")
+	fmt.Println("tsra")
 
 	// 回文数判断：
 	// 1. 偶数长度时，x == reverted

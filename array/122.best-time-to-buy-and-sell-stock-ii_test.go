@@ -55,10 +55,10 @@
  *
  *
  */
-package arr
+package leetcode
 
 // @lc code=start
-func maxProfit(prices []int) int {
+func maxProfit_121(prices []int) int {
 	return cal(prices, 0)
 }
 

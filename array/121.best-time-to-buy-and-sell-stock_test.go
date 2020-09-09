@@ -37,7 +37,7 @@
  *
  *
  */
-package arr
+package leetcode
 
 import "math"
 

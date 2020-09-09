@@ -86,8 +86,7 @@ func search_81(nums []int, target int) bool {
 	return false
 }
 
-// @lc code=end
-
+// @lc code=endd
 func TestSearch_81(t *testing.T) {
 	for index, tc := range []struct {
 		nums   []int

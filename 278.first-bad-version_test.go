@@ -64,7 +64,6 @@ func isBadVersion(version int) bool {
 
 func firstBadVersion(n int) int {
 	// binary search2
-
 	left, right := 1, n
 	for left < right {
 		mid := left + (right-left)/2
