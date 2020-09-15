@@ -21,6 +21,20 @@ func TestList(t *testing.T) {
 	// 1. 简单地“将下一个结点分配给head” head = head.Next
 }
 
+func TestList2(t *testing.T) {
+	// 双向链表操作
+
+	// 一。添加
+	// 1. 链接cur与prev和next, 其中next是prev原始的下一个节点
+	// cur.Prev = prev, cur.Next = next
+	// 2. 用cur重新链接prev和next
+	// prev.Next = cur, next.Prev = cur
+
+	// 二。删除
+	// 如果我们想从双链表中删除一个现有的结点 cur，我们可以简单地将它的前一个结点 prev 与下一个结点 next 链接起来。
+	// cur.Prev.Next = cur.Next, cur.Next.Prev = cur.Prev
+}
+
 type MyLinkedList struct{}
 
 func (this *MyLinkedList) Get(index int) int {
