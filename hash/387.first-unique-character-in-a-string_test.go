@@ -12,42 +12,34 @@
  * Testcase Example:  '"leetcode"'
  *
  * 给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
- * 
- * 
- * 
+ *
+ *
+ *
  * 示例：
- * 
+ *
  * s = "leetcode"
  * 返回 0
- * 
+ *
  * s = "loveleetcode"
  * 返回 2
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
  * 提示：你可以假定该字符串只包含小写字母。
- * 
+ *
  */
 func firstUniqChar(s string) int {
-  h := map[byte]int{}
+	h := map[byte]int{}
 
-  for i := 0; i < len(s); i++ {
-    h[s[i]]++
-  }
+	for i := 0; i < len(s); i++ {
+		h[s[i]]++
+	}
 
-  key byte := 0
-  for k, v := range h {
-    if v == 1 {
-      key = k
-      break
-    }
-  }
-
-  for i := 0; i < len(s); i++ {
-    if s[i] == key {
-      return i
-    }
-  }
-  return -1
+	for i := 0; i < len(s); i++ {
+		if h[s[i]] == 1 {
+			return i
+		}
+	}
+	return -1
 }
